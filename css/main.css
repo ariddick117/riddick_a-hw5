@@ -1,0 +1,54 @@
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.container
+{
+	margin: 0 auto;
+	background-color: #efefef;
+	max-width: 1200px;
+}
+
+.box
+{
+	background-color: #8ea86e;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
+}
+
+.logo
+{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 600px) {
+	#mainHeader 
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.box { flex: 1 1 auto; }
+
+	.nav { flex: 0 1 600px; /* no grow but it can be allowed to shrink */}
+
+	.logo 
+	{
+		order: -1;
+		flex: 0 1 220px;
+		margin-left: 10px;
+	}
+
+	#products
+	{
+		display: flex;
+		flex-direction: row;
+	}
+}
